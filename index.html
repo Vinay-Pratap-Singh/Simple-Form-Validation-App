@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Form Validation</title>
+  </head>
+  <body class="h-screen w-full flex items-center justify-center bg-gray-100">
+    <form class="flex flex-col items-center justify-center gap-2 p-4 bg-white rounded-lg" onsubmit="check()">
+        <h1 class="text-xl font-bold">Create an Account</h1>
+      <input
+        type="text"
+        id="username"
+        class="border border-black px-2 py-1 rounded"
+        placeholder="Choose Username"
+      />
+      <input
+        type="email"
+        id="email"
+        class="border border-black px-2 py-1 rounded"
+        placeholder="Enter Email Address"
+      />
+      <input
+        type="password"
+        id="password"
+        class="border border-black px-2 py-1 rounded"
+        placeholder="Select a Password"
+      />
+      <input
+        type="password"
+        id="confPassword"
+        class="border border-black px-2 py-1 rounded"
+        placeholder="Confirm Password"
+      />
+      <button type="submit" class="border border-black px-2 rounded">Sign Up</button>
+    </form>
+  </body>
+  <script src="./script.js"></script>
+</html>
